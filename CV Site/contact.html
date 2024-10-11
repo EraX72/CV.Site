@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="button animated-button">Начало</a></li>
+                <li><a href="about.html" class="button animated-button">За мен</a></li>
+                <li><a href="cv.html" class="button animated-button">CV</a></li>
+                <li><a href="portfolio.html" class="button animated-button">Портфолио</a></li>
+                <li><a href="contact.html" class="button animated-button">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h1>Контакти</h1>
+            <p style="text-align: center;">Свържете се с мен на:</p>
+            <ul style="list-style-type: none; padding: 0; text-align: center;">
+                <li>Email: <a href="mailto:eraynejdet70@gmail.com">eraynejdet70@gmail.com</a></li>
+                <li>Телефон: <a href="tel:+359876060222">+359 876 060 222</a></li>
+                <li>Адрес: България, Бургас, жк Славейков, ул. Георги Минков, бл. 190</li>
+            </ul>
+
+            <div id="email-form">
+                <h2>Изпратете съобщение</h2>
+                <form action="send_email.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Име:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Съобщение:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Изпрати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Ерай Неждет Смаил</p>
+    </footer>
+</body>
+</html>
